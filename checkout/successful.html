@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Successful</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .success-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 40px;
+            text-align: center;
+            background-color: var(--eerie-black-2);
+            border-radius: var(--radius-24);
+            box-shadow: var(--shadow-1);
+        }
+        .success-icon {
+            font-size: 100px;
+            color: var(--gold-crayola);
+            margin-bottom: 20px;
+        }
+        .success-title {
+            font-family: var(--fontFamily-forum);
+            font-size: var(--fontSize-title-1);
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+        .success-text {
+            font-family: var(--fontFamily-dm_sans);
+            font-size: var(--fontSize-body-3);
+            line-height: var(--lineHeight-5);
+            color: var(--quick-silver);
+            margin-bottom: 30px;
+        }
+        .btn-home {
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: var(--fontSize-label-1);
+            color: var(--black);
+            background-color: var(--gold-crayola);
+            border: none;
+            padding: 10px 30px;
+            border-radius: var(--radius-24);
+            font-weight: var(--weight-bold);
+            text-decoration: none;
+            transition: var(--transition-1);
+        }
+        .btn-home:hover {
+            background-color: var(--white);
+            color: var(--gold-crayola);
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-icon">✔</div>
+        <h1 class="success-title">Payment Successful</h1>
+        <p class="success-text">
+            Thank you for your payment. Your transaction has been successfully completed. If you have any questions, feel free to contact our support.
+        </p>
+        <a href="../home.html" class="btn-home">Back to Home</a>
+    </div>
+</body>
+</html>

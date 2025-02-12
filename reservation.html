@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: black;">
+
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">Grilli</p>
+    </div>
+
+    <div id="topbar"></div>
+    <div id="header"></div>
+    <section style="background-image: url(./assets/images/testimonial-bg.jpg);" class="reservation" id="reservation">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="container">
+          <div class="form reservation-form bg-black-10">
+            <form action="" class="form-left">
+              <h2 class="headline-1 text-center">Online Reservation</h2>
+    
+              <p class="form-text text-center">
+                Booking request <a href="tel:+201021675563" class="link">+20-102-1675563</a>
+                or fill out the order form
+              </p>
+    
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Name" autocomplete="off" class="input-field" required>
+                <input type="tel" name="phone" placeholder="Phone Number" autocomplete="off" class="input-field" required>
+                <input type="email" name="email" placeholder="Email" autocomplete="off" class="input-field" required>
+              </div>
+              
+              <div class="icon-wrapper">
+                <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+                <input type="date" name="reservation-date" class="input-field" required>
+                <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+              </div>
+
+
+              <div class="input-wrapper">
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 Person</option>
+                    <option value="2-person">2 Person</option>
+                    <option value="3-person">3 Person</option>
+                    <option value="4-person">4 Person</option>
+                    <option value="5-person">5 Person</option>
+                    <option value="6-person">6 Person</option>
+                    <option value="7-person">7 Person</option>
+                  </select>
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+    
+                <!-- Meal Selection -->
+                <div class="icon-wrapper">
+                  <ion-icon name="restaurant-outline" aria-hidden="true"></ion-icon>
+                  <select id="mealType" class="input-field" required>
+                    <option value="" disabled selected>Select Meal</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                  </select>
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+                
+                <!-- Time Selection -->
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+                  <select id="timeDropdown" class="input-field" required>
+                    <option value="" disabled selected>Select Time</option>
+                  </select>
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <!-- Food Selection -->
+                <div class="icon-wrapper">
+                  <ion-icon name="pizza-outline" aria-hidden="true"></ion-icon>
+                  <select id="foodType" class="input-field" required>
+                    <option value="" disabled selected>Select Food</option>
+                  </select>
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <br><br>
+              <p class="text-center">Let us know if there any details or special requests for your reservation.</p>
+    
+              <textarea name="message" placeholder="Message" autocomplete="off" class="input-field"></textarea>
+    
+              <a href="./checkout/index.html" class="btn btn-secondary">
+                
+                <span class="text text-1">Book A Table</span>
+                <span class="text text-2" aria-hidden="true">Book A Table</span>
+                
+              </a>
+              
+              <br>
+
+            </form>
+    
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+              <h2 class="headline-1 text-center">Contact Us</h2><br><br>
+              <p class="contact-label">Booking Request</p>
+              <a href="tel:+201021675563" class="body-1 contact-number hover-underline">+20-102-1675563</a><br>
+    
+              <div class="separator"></div><br>
+              <p class="contact-label">Location</p>
+              <address class="body-4">
+                Uni St, Gana City, <br>
+                New Mansoura City 35511 , EGY
+              </address>
+    
+              <br>
+              <p class="contact-label">Breakfast Time</p>
+              <p class="body-4">
+                Daily (excluding Friday)<br>
+                8:30 AM - 11:00 AM
+              </p>
+    
+              <br>
+              <p class="contact-label">Lunch Time</p>
+              <p class="body-4">
+                Daily (Monday to Sunday)<br>
+                1:30 PM - 5:00 PM
+              </p>
+    
+              <br>
+              <p class="contact-label">Dinner Time</p>
+              <p class="body-4">
+                Daily (Monday to Sunday)<br>
+                6:00 PM - 10:00 PM
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br><br><br><br><br><br><br>
+      <div id="footer"></div>
+
+      <script src="./js/script.js"></script>
+
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
