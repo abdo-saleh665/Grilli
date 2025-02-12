@@ -14,7 +14,7 @@ Grilli is a fully responsive restaurant website designed to provide an engaging 
 
 Experience the live demo of the Grilli website template:
 
-[Live Demo](https://rudrakatrodiya.github.io/Restaurant/)
+[Live Demo](https://abdo-saleh2399.github.io/Grilli/)
 
 ## Prerequisites
 
